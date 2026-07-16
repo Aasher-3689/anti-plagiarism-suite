@@ -1,0 +1,13 @@
+# Virtual Environment
+.venv/
+
+# Pycharm & VSCode Files
+.idea/
+.vscode/
+
+# Python Cache
+__pycache__/
+
+# Sentence Transformers Model Cache
+*.bin
+*.pt

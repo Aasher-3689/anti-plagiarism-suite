@@ -2,7 +2,40 @@
 import numpy
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
-from app.schemas.similarity import FlaggedPair
+from app.schemas.similarity import FlaggedPair, SimilarityResponse, SimilarityRequest
+from fastapi import APIRouter, HTTPException
+
+
+# Router
+router = APIRouter(prefix="/api")
+
+@router.post("/similarity", response_model=SimilarityResponse)
+async def check_similarity(request: SimilarityRequest):
+    """Check cross submission similarity for a set of answers"""
+    if len(request.submissions)< 2:
+        raise HTTPException(
+            status_code=400,
+            detail="At least 2 submissions are required for similarity check."
+        )
+    answers = [s.answer for s in request.submissions]
+    n = len(answers)
+    total_comparisons = n * (n-1) // 2
+    # Core Pipeline
+    embeddings = generate_embeddings(answers)
+    similarities = generate_cosine_similarity(embeddings)
+    flagged = get_flagged_pairs(similarities=similarities,
+                                threshold=request.threshold,
+                                submissions=request.submissions)
+    return SimilarityResponse(
+        exam_id = request.exam_id,
+        question_id = request.question_id,
+        total_submissions = n,
+        total_comparisons = total_comparisons,
+        total_flagged_pairs = len(flagged),
+        threshold = request.threshold,
+        results = flagged
+    )
+
 
 
 # Model Loadings

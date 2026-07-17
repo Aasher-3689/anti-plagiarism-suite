@@ -20,7 +20,7 @@ class SimilarityResponse(BaseModel):
     total_submissions: int
     total_comparisons: int
     total_flagged_pairs: int
-    threshold: float = Field(default=0.85, ge=0, le=1)
+    threshold: float = Field(ge=0, le=1)
     results: list[FlaggedPair]
 
 

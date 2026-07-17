@@ -67,11 +67,12 @@ def get_flagged_pairs(similarities: numpy.ndarray,
     length = len(submissions)
     for i in range(length):
         for j in range(i+1, length):
-            score = similarities[i,j]
+            score = float(similarities[i,j])
+            score = max(0.0, min(1.0, score))
             if score >= threshold:
                 flagged.append(FlaggedPair(
                     student1_id = submissions[i].student_id,
                     student2_id = submissions[j].student_id,
-                    similarity_score = float(score)
+                    similarity_score = round(score, 4)
                 ))
     return flagged

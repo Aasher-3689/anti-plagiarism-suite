@@ -13,6 +13,11 @@ async def check_ast(request: ASTRequest):
     """Compare code submission using AST
        Current Languages: Python"""
     total_submissions = len(request.submissions)
+    if total_submissions < 2:
+        raise HTTPException(
+            status_code=400,
+            detail="At least 2 submissions are required for code similarity check."
+        )
     total_comparisons = total_submissions * (total_submissions - 1) // 2
     flagged = get_flagged_pairs(request.submissions,
                                 request.threshold)

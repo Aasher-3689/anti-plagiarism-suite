@@ -1,39 +1,39 @@
 {
-  "exam_id": "CS-101-GIT-01",
-  "question_id": "GIT-01-Q01",
-  "threshold": 0.80,
+  "exam_id": "CS-102-PYTHON-01",
+  "question_id": "PYTHON-01-Q02",
+  "threshold": 0.81,
   "submissions": [
     {
       "student_id": "S001",
-      "answer": "Git is a distributed version control system that tracks changes in source code. Developers love Git because it allows collaboration, keeps project history, and makes it easy to undo mistakes."
+      "code": "def factorial(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result"
     },
     {
       "student_id": "S002",
-      "answer": "Git is a distributed version control tool used to manage changes in code. It is popular among developers because it supports teamwork, records every change, and allows previous versions to be restored."
+      "code": "def factorial(x):\n    ans = 1\n    for num in range(1, x + 1):\n        ans *= num\n    return ans"
     },
     {
       "student_id": "S003",
-      "answer": "Git helps programmers keep track of code changes over time. It makes collaboration easier by allowing multiple developers to work on the same project without overwriting each other's work."
+      "code": "def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)"
     },
     {
       "student_id": "S004",
-      "answer": "Git is software that stores different versions of a project. Developers like it because they can collaborate efficiently, create branches for new features, and merge changes safely."
+      "code": "def factorial(value):\n    output = 1\n    for number in range(1, value + 1):\n        output = output * number\n    return output"
     },
     {
       "student_id": "S005",
-      "answer": "Git is a distributed version control system that tracks changes in source code. Developers love Git because it allows collaboration, keeps project history, and makes it easy to undo mistakes."
+      "code": "def factorial(n):\n    import math\n    return math.factorial(n)"
     },
     {
       "student_id": "S006",
-      "answer": "Version control is important in software development, and Git is the most widely used system. It helps teams coordinate work, review changes, and recover earlier versions of files."
+      "code": "def square(n):\n    return n * n"
     },
     {
       "student_id": "S007",
-      "answer": "Git records every modification made to project files. It enables branching, merging, and collaboration, making software development more organized and reliable."
+      "code": "def factorial(n):\n    total = 1\n    i = 1\n    while i <= n:\n        total *= i\n        i += 1\n    return total"
     },
     {
       "student_id": "S008",
-      "answer": "Git is mainly used for hosting websites on the internet. Developers like it because it automatically creates web pages from HTML files."
+      "code": "def factorial(n):\n    result=1\n    for i in range(1,n+1):\n        result*=i\n    return result"
     }
   ]
 }

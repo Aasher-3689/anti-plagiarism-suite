@@ -1,0 +1,39 @@
+{
+  "exam_id": "CS-101-GIT-01",
+  "question_id": "GIT-01-Q01",
+  "threshold": 0.80,
+  "submissions": [
+    {
+      "student_id": "S001",
+      "answer": "Git is a distributed version control system that tracks changes in source code. Developers love Git because it allows collaboration, keeps project history, and makes it easy to undo mistakes."
+    },
+    {
+      "student_id": "S002",
+      "answer": "Git is a distributed version control tool used to manage changes in code. It is popular among developers because it supports teamwork, records every change, and allows previous versions to be restored."
+    },
+    {
+      "student_id": "S003",
+      "answer": "Git helps programmers keep track of code changes over time. It makes collaboration easier by allowing multiple developers to work on the same project without overwriting each other's work."
+    },
+    {
+      "student_id": "S004",
+      "answer": "Git is software that stores different versions of a project. Developers like it because they can collaborate efficiently, create branches for new features, and merge changes safely."
+    },
+    {
+      "student_id": "S005",
+      "answer": "Git is a distributed version control system that tracks changes in source code. Developers love Git because it allows collaboration, keeps project history, and makes it easy to undo mistakes."
+    },
+    {
+      "student_id": "S006",
+      "answer": "Version control is important in software development, and Git is the most widely used system. It helps teams coordinate work, review changes, and recover earlier versions of files."
+    },
+    {
+      "student_id": "S007",
+      "answer": "Git records every modification made to project files. It enables branching, merging, and collaboration, making software development more organized and reliable."
+    },
+    {
+      "student_id": "S008",
+      "answer": "Git is mainly used for hosting websites on the internet. Developers like it because it automatically creates web pages from HTML files."
+    }
+  ]
+}

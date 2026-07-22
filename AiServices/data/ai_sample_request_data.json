@@ -1,0 +1,39 @@
+{
+  "exam_id": "CS-101-GIT-01",
+  "question_id": "GIT-01-Q05",
+  "threshold": 70,
+  "submissions": [
+    {
+      "student_id": "S001",
+      "answer": "Git is a distributed version control system that allows developers to track changes in source code. It makes collaboration easier by supporting branching, merging, and maintaining a complete project history."
+    },
+    {
+      "student_id": "S002",
+      "answer": "Git is for the version history control."
+    },
+    {
+      "student_id": "S003",
+      "answer": "Git stores different versions of files so programmers can restore previous work if needed. It is widely used because it supports teamwork and keeps a complete history of changes."
+    },
+    {
+      "student_id": "S004",
+      "answer": "Git enables developers to create branches, merge code, resolve conflicts, and maintain a reliable development history."
+    },
+    {
+      "student_id": "S005",
+      "answer": "Git is software that helps developers track modifications in code. It simplifies teamwork, prevents accidental overwrites, and makes project management more organized."
+    },
+    {
+      "student_id": "S006",
+      "answer": "Banana elephant cloud bicycle notebook sandwich purple ocean window guitar sunshine coffee mountain."
+    },
+    {
+      "student_id": "S007",
+      "answer": "The quick brown fox jumps over the lazy dog. Every developer likes coffee because repositories sing beautifully under the digital moon."
+    },
+    {
+      "student_id": "S008",
+      "answer": "Git is mainly used to save project versions and coordinate software development. Developers appreciate it because it provides reliable version tracking, branching, and collaboration features."
+    }
+  ]
+}
